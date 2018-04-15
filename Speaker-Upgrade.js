@@ -36,10 +36,10 @@ class Speaker {
 
 class Shouter extends Speaker {
   constructor(name){
-    super(name);
+    super(name);    // The solution expects this to be super(name,"shouts");
   }
   speak(text){
-    console.log(text.toUpperCase());
+    super.speak(text.toUpperCase());
   }
 }
 
